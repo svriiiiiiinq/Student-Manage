@@ -1,0 +1,82 @@
+/* Background */
+.background-parallax {
+    background-image: url('https://yourhighresimageurl.com'); /* พื้นหลังคุณภาพสูง */
+    background-attachment: fixed;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  /* Text gradient */
+  .text-gradient {
+    background: linear-gradient(90deg, #ff6b6b, #ffb6b9);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Custom Card */
+  .custom-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* User profile image */
+  .user-profile-img {
+    width: 150px;
+    height: 150px;
+    transition: all 0.3s ease;
+  }
+  
+  .user-profile-img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Animated buttons */
+  .btn-animated {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #fff;
+    border: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-animated:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+    transform: translateY(-2px);
+  }
+  
+  .btn-signout-animated {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-signout-animated:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(255, 107, 107, 0.3);
+  }
+  
+  /* Google button */
+  .btn-google-animated {
+    background-color: #db4437;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-google-animated:hover {
+    background-color: #c23321;
+    transform: translateY(-3px);
+  }
+  
