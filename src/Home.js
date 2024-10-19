@@ -7,6 +7,7 @@ import Form from "./components/Form";
 import UserList from "./components/UserList";
 import OrderDashboard from "./OrderDashboard";
 import "./Home.css"; // ไฟล์ CSS ที่จะใส่ลูกเล่น
+import "./index.css"; 
 
 const Home = () => {
   const { user, signInWithGoogle, signOut } = useAuth();

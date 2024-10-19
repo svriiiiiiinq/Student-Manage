@@ -56,14 +56,14 @@ code {
 
 .right-side {
   width: 65%;
-  padding-left: -1px;
+  padding-left: -100px;
 }
 
 .right-side table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 350px;
-  margin-left: -80px; /* เลื่อนตารางไปทางซ้าย */
+  margin-left: -10px; /* เลื่อนตารางไปทางซ้าย */
 }
 
 .right-side table th,
@@ -86,7 +86,7 @@ code {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   margin-top: -1px;
   width: 400px;
-  margin-left: 100px; /* เลื่อนฟอร์มไปทางขวา */
+  margin-left: 70px; /* เลื่อนฟอร์มไปทางขวา */
 }
 
 .insertForm h2 {

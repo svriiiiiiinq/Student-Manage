@@ -2,6 +2,7 @@ import { Provider } from "./Context";
 import Form from "./components/Form";
 import UserList from "./components/UserList";
 import { Actions } from "./Actions";
+import "./index.css"; 
 
 function App() {
   const data = Actions();

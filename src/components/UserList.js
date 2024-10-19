@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { AppContext } from '../Context';
 
+
 const UserList = () => {
     const {
         users,
@@ -121,15 +122,13 @@ const UserList = () => {
                                 />
                             </td>
                             <td>
-                                <button className="btn green-btn" onClick={saveBtn}>
-                                    Save
-                                </button>
-                                <button
-                                    className="btn default-btn"
-                                    onClick={() => cancelEdit(id)}
-                                >
-                                    Cancel
-                                </button>
+                            <button className="btn btn-success" onClick={saveBtn}>
+    Save
+</button>
+<button className="btn btn-warning" onClick={() => cancelEdit(id)}>
+    Cancel
+</button>
+
                             </td>
                         </tr>
                     ) : (
@@ -156,16 +155,17 @@ const UserList = () => {
                             <td>{user_email}</td>
                             <td>{user_address}</td>
                             <td>
+                            <button
+                                    className="btn btn-secondary edit-btn" // เปลี่ยนเป็น btn-secondary
+                                     onClick={() =>
+                                      enableEdit(id, profile_picture, student_ID, user_name, user_email, user_address)
+    }
+>
+                                     Edit
+</button>
+
                                 <button
-                                    className="btn edit-btn"
-                                    onClick={() =>
-                                        enableEdit(id, profile_picture, student_ID, user_name, user_email, user_address)
-                                    }
-                                >
-                                    Edit
-                                </button>
-                                <button
-                                    className="btn delete-btn"
+                                    className="btn  btn-danger delete-btn"
                                     onClick={() => deleteConfirm(id)}
                                 >
                                     Delete
